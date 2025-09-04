@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "https://anxhu2004-local-store-backend.hf.space",
 });
 
 export default API;
+
