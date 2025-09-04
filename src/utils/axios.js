@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:8000", // or wherever your FastAPI runs
+  baseURL: "https://anxhu2004-local-store-backend.hf.space", // or wherever your FastAPI runs
 });
 
 // Attach token from localStorage/sessionStorage
@@ -15,3 +15,4 @@ instance.interceptors.request.use((config) => {
 });
 
 export default instance;
+
