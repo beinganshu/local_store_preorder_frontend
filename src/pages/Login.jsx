@@ -7,7 +7,7 @@ const Login = ({ toggle }) => {
   const navigate = useNavigate();
   const handleLogin = async () => {
     try {
-      const response = await axios.post("http://localhost:8000/auth/login", {
+      const response = await axios.post("https://anxhu2004-local-store-backend.hf.space/auth/login", {
         email,
         password,
       });
@@ -65,3 +65,4 @@ const Login = ({ toggle }) => {
 };
 
 export default Login;
+
