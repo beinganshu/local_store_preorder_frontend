@@ -17,7 +17,7 @@ const Register = ({ toggle }) => {
     try {
       console.log("Registering:", { name, email, password, role });
       // 1. Send registration request
-      const res = await axios.post("http://localhost:8000/auth/register", {
+      const res = await axios.post("https://anxhu2004-local-store-backend.hf.space/auth/register", {
         name,
         email,
         password,
@@ -103,3 +103,4 @@ const Register = ({ toggle }) => {
 };
 
 export default Register;
+
