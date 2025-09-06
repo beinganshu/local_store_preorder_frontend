@@ -25,7 +25,7 @@ const Register = ({ toggle }) => {
       });
 
       // 2. Immediately log in the user after successful registration
-      const loginRes = await axios.post("http://localhost:8000/auth/login", {
+      const loginRes = await axios.post("https://anxhu2004-local-store-backend.hf.space/auth/login", {
         email,
         password,
       });
@@ -103,4 +103,5 @@ const Register = ({ toggle }) => {
 };
 
 export default Register;
+
 
