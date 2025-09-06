@@ -7,7 +7,7 @@ const CustomerOrders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/customer/orders", {
+        const res = await axios.get("https://anxhu2004-local-store-backend.hf.space/customer/orders", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -25,14 +25,14 @@ const CustomerOrders = () => {
 
     try {
       await axios.delete(
-        `http://localhost:8000/customer/cancel-order/${orderId}`,
+        `https://anxhu2004-local-store-backend.hf.space/customer/cancel-order/${orderId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         }
       );
-      const res = await axios.get("http://localhost:8000/customer/orders", {
+      const res = await axios.get("https://anxhu2004-local-store-backend.hf.space/customer/orders", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setOrders(res.data);
@@ -109,3 +109,4 @@ const CustomerOrders = () => {
 };
 
 export default CustomerOrders;
+
