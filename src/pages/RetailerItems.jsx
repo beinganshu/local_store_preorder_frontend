@@ -12,7 +12,7 @@ const RetailerItems = () => {
 
   const fetchItems = async () => {
     try {
-      const res = await axios.get("/retailer/items");
+      const res = await axios.get("/retailer/items/");
       setItems(res.data);
     } catch (err) {
       console.error("Error fetching items", err);
@@ -129,3 +129,4 @@ const RetailerItems = () => {
 };
 
 export default RetailerItems;
+
