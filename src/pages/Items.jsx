@@ -13,7 +13,7 @@ const RetailerItems = () => {
       try {
         const token = localStorage.getItem("token");
         const res = await axios.get(
-          `http://localhost:8000/customer/items/${id}`,
+          `https://anxhu2004-local-store-backend.hf.space/customer/items/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -102,3 +102,4 @@ const RetailerItems = () => {
 };
 
 export default RetailerItems;
+
