@@ -38,7 +38,7 @@ const Cart = () => {
 
     try {
       const paymentRes = await axios.post(
-        "http://localhost:8000/create-razorpay-order",
+        "https://anxhu2004-local-store-backend.hf.space/create-razorpay-order",
         { amount: totalAmount },
         {
           headers: {
@@ -66,7 +66,7 @@ const Cart = () => {
           }));
 
           await axios.post(
-            "http://localhost:8000/customer/place-order",
+            "https://anxhu2004-local-store-backend.hf.space/customer/place-order",
             {
               retailer_id,
               items,
@@ -127,7 +127,7 @@ const Cart = () => {
 
     try {
       await axios.post(
-        "http://localhost:8000/customer/place-order",
+        "https://anxhu2004-local-store-backend.hf.space/customer/place-order",
         {
           retailer_id,
           items,
@@ -245,3 +245,4 @@ const Cart = () => {
 };
 
 export default Cart;
+
