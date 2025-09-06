@@ -11,7 +11,7 @@ const RetailerSelection = () => {
     const fetchRetailers = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:8000/auth/retailers", {
+        const res = await axios.get("https://anxhu2004-local-store-backend.hf.space/auth/retailers", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -50,3 +50,4 @@ const RetailerSelection = () => {
 };
 
 export default RetailerSelection;
+
