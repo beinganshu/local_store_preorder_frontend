@@ -25,7 +25,7 @@ const RetailerItems = () => {
 
   const handleAddItem = async () => {
     try {
-      await axios.post("/retailer/items", {
+      await axios.post("/retailer/items/", {
         ...newItem,
         price: parseFloat(newItem.price),
         quantity_available: parseFloat(newItem.quantity_available),
@@ -129,4 +129,5 @@ const RetailerItems = () => {
 };
 
 export default RetailerItems;
+
 
