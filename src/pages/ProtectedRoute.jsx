@@ -14,7 +14,7 @@ const ProtectedRoute = () => {
       }
 
       try {
-        const res = await axios.get("http://localhost:8000/auth/me", {
+        const res = await axios.get("https://anxhu2004-local-store-backend.hf.space/auth/me", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -44,3 +44,4 @@ const ProtectedRoute = () => {
 };
 
 export default ProtectedRoute;
+
